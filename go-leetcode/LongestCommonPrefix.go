@@ -1,8 +1,7 @@
 // 14. Longest Common Prefix
-package goleetcode
+package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -33,9 +32,9 @@ func longestCommonPrefix(strs []string) string {
 	return result
 }
 
-func main() {
+// func main() {
 
-	strs := []string{"flower", "flow", "flight"}
+// 	strs := []string{"flower", "flow", "flight"}
 
-	fmt.Println(longestCommonPrefix(strs))
-}
+// 	fmt.Println(longestCommonPrefix(strs))
+// }

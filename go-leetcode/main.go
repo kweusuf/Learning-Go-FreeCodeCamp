@@ -14,7 +14,7 @@ type user struct {
 	RegDate  string `json:"Reg_date"`
 }
 
-func main() {
+func mainMain() {
 	userinfos := []user{
 		{
 			FullName: "blessing james",
@@ -39,9 +39,14 @@ func main() {
 		},
 	}
 
-	jsonBytes, err := json.Marshal(userinfos)
+	jsonBytes, err := json.MarshalIndent(userinfos, "", "    ")
 	if err != nil {
 		log.Fatalln(err)
 	}
 	fmt.Println(string(jsonBytes))
+}
+
+func main() {
+	// mainMain()
+	mainMergeTwoSortedLists()
 }
